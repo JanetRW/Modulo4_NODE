@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pokemon.css">
+    <title>Pokemon API-REST</title>
+    <link rel="shortcut icon" href="./img/pokeball.png" type="image/x-icon">
+    <link rel="icon" type="image/png" href="imagenes/favicon.jpg">
+</head>
+<body>
+    <header>
+        <img src="./imagenes/logo.png" alt="Logo Pokemon" class="logo">
+    </header>
+
+    <main>
+        <div class="form">
+            <h1 class="form_title">¡Encuentra tu Pokemon!</h1>
+            <input type="text" id="pokemon_name" placeholder="Introduce el nombre un Pokemon" class="form_input">
+            <button class="form_button" onclick="buscarPokemon()" type="reset">BUSCAR</button>
+        </div>
+        <div class="card">
+            <h1 class="card_title" id="card_title">Pokemon</h1>
+            <img src="./imagenes/pokeball.png" style="width: 200px; height: 200px;" alt="Foto del pokemon" class="card_img" id="card_img">
+            <table class="table" id="table">
+                    <!-- <tr>
+                        <th>Las Habilidades de Pokemons</th>
+                    </tr> -->
+            </table>
+            <div class="msg_error" id="msg_error"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Desarrollado por Janet Rojas Wong - 2023 | All rights reserved</p>
+    </footer>
+
+    <script src="pokemon.js"></script>
+</body>
+</html>
